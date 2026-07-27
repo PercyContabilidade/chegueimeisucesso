@@ -23,169 +23,119 @@
     <img src="logochegueisoumei3.jpeg" alt="Logo Cheguei Sou MEI de Sucesso" width="100%" style="border-radius: 6px; max-height: 250px; object-fit: cover;">
     </div>
  
-    <form name="formulario-mei" method="POST" netlify action="/sucesso.html">
-        <input type="hidden" name="form-name" value="formulario-mei" />
-     
-        <h2 style="color: #008080; border-bottom: 2px solid #008080; padding-bottom: 5px; margin-top: 0; font-size: 1.4em;">
-            ✅ Questionário Rápido — Perfil do MEI de Sucesso
-        </h2>
+<form name="formulario-mei" method="POST" data-netlify="true" action="/sucesso.html">
+    <input type="hidden" name="form-name" value="formulario-mei" />
+ 
+    <h2 style="color: #008080; border-bottom: 2px solid #008080; padding-bottom: 5px; margin-top: 0; font-size: 1.4em;">
+        ✅ Questionário Rápido — Perfil do MEI de Sucesso
+    </h2>
 
-           <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
 
-        <p><strong>✨ 1. Complete a frase: Ser MEI de sucesso é...</strong></p>
-        <label>
-            📝 Resposta curta:
-            <input type="text" name="definicao_sucesso" size="60" placeholder="Escreva sua definição de sucesso em poucas palavras..." required style="border: none; border-bottom: 1px solid #000; width: 90%;">
+    <p><strong>✨ 1. Complete a frase: Ser MEI de sucesso é...</strong></p>
+    <label>
+        📝 Resposta curta:
+        <input type="text" name="definicao_sucesso" size="60" placeholder="Escreva sua definição de sucesso em poucas palavras..." required style="border: none; border-bottom: 1px solid #000; width: 90%;">
+    </label>
+    
+    <br><br>
+    
+    <!-- Pergunta 2 -->
+    <div style="margin-bottom: 25px;">
+        <label style="display: block; font-weight: bold; margin-bottom: 8px; color: #333;">
+            2. Qual foi o seu principal motivo para abrir o MEI e qual a sua visão sobre os impostos e o teto de faturamento?
         </label>
-        
-        <br><br>
-        
-<!-- Pergunta 2: O Motivo de Entrada e a Visão sobre Tributos/Teto -->
-        <div style="margin-bottom: 25px;">
-            <label style="display: block; font-weight: bold; margin-bottom: 8px; color: #333;">
-                2. Qual foi o seu principal motivo para abrir o MEI e qual a sua visão sobre os impostos e o teto de faturamento?
-            </label>
-            <div style="margin-bottom: 6px;"><input type="radio" name="motivo_mei" required> Apenas para emitir nota e pagar menos imposto (evito custos e a ideia de passar de 81k me assusta)</div>
-            <div style="margin-bottom: 6px;"><input type="radio" name="motivo_mei"> Para ter um registro de sobrevivência (acho o DAS pesado e evito pensar em desenquadrar)</div>
-            <div style="margin-bottom: 6px;"><input type="radio" name="motivo_mei"> Para validar minhas primeiras vendas (vejo os tributos como parte natural e quero lucrar mais)</div>
-            <div><input type="radio" name="motivo_mei"> Para iniciar a construção de um império (o MEI é só o primeiro degrau rumo à ME e além)</div>
+        <div style="margin-bottom: 6px;"><input type="radio" name="motivo_mei" value="Emitir nota e pagar menos" required> Apenas para emitir nota e pagar menos imposto (evito custos e a ideia de passar de 81k me assusta)</div>
+        <div style="margin-bottom: 6px;"><input type="radio" name="motivo_mei" value="Registro de sobrevivencia"> Para ter um registro de sobrevivência (acho o DAS pesado e evito pensar em desenquadrar)</div>
+        <div style="margin-bottom: 6px;"><input type="radio" name="motivo_mei" value="Validar primeiras vendas"> Para validar minhas primeiras vendas (vejo os tributos como parte natural e quero lucrar mais)</div>
+        <div><input type="radio" name="motivo_mei" value="Construir um imperio"> Para iniciar a construção de um império (o MEI é só o primeiro degrau rumo à ME e além)</div>
+    </div>
+
+    <!-- Pergunta 3 -->
+    <div style="margin-bottom: 25px;">
+        <p><strong>3. Qual é a sua principal visão para o faturamento e o futuro da sua empresa nos próximos 3 anos?</strong></p>
+        <label><input type="radio" name="visao_futuro" value="Sobrevivência" required> Apenas manter as contas em dia e garantir minha renda de sobrevivência</label><br>
+        <label><input type="radio" name="visao_futuro" value="Estabilizar"> Estabilizar o negócio, organizar a casa e continuar operando no limite do MEI</label><br>
+        <label><input type="radio" name="visao_futuro" value="Escalar"> Escalar além dos 81k, estruturando a empresa para faturar múltiplos dígitos e virar ME</label><br>
+        <label><input type="radio" name="visao_futuro" value="Império"> Construir um império empresarial sólido, mirando a meta do milhão e a consolidação corporativa</label>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #000; margin: 15px 0;">
+    
+    <p><strong>🟡 4. Qual é o seu segmento de atuação como MEI?</strong></p>
+    <label><input type="radio" name="segmento" value="Alimentação" required> Alimentação</label><br>
+    <label><input type="radio" name="segmento" value="Beleza/Estética"> Beleza/Estética</label><br>
+    <label><input type="radio" name="segmento" value="Moda"> Moda</label><br>
+    <label><input type="radio" name="segmento" value="Serviços"> Serviços</label><br>
+    <label><input type="radio" name="segmento" value="Artesanato"> Artesanato</label><br>
+    <label><input type="radio" name="segmento" value="Tecnologia"> Tecnologia</label><br>
+    <label>
+        <input type="radio" name="segmento" value="Outro"> Outro: 
+        <input type="text" name="segmento_outro" placeholder="Especifique aqui..." style="border: none; border-bottom: 1px dashed #ccc; width: 60%;">
+    </label>
+
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
+
+    <p><strong>🔥 5. Quando você formalizou seu MEI?</strong></p>
+    <label><input type="radio" name="tempo_mei" value="Menos de 6 meses" required> Menos de 6 meses</label><br>
+    <label><input type="radio" name="tempo_mei" value="Entre 6 meses e 1 ano"> Entre 6 meses e 1 ano</label><br>
+    <label><input type="radio" name="tempo_mei" value="Mais de 1 ano"> Mais de 1 ano</label>
+
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
+
+    <p><strong>💬 6. Qual foi sua maior dificuldade no início?</strong></p>
+    <label><input type="radio" name="dificuldade_inicio" value="Atrair clientes" required> Atrair clientes</label><br>
+    <label><input type="radio" name="dificuldade_inicio" value="Divulgar meu negócio"> Divulgar meu negócio</label><br>
+    <label><input type="radio" name="dificuldade_inicio" value="Organizar finanças"> Organizar finanças</label><br>
+    <label><input type="radio" name="dificuldade_inicio" value="Entender burocracias"> Entender burocracias</label><br>
+    <label><input type="radio" name="dificuldade_inicio" value="Acreditar que era possível crescer"> Acreditar que era possível crescer</label><br>
+    <label>
+        <input type="radio" name="dificuldade_inicio" value="Outro"> Outro:
+        <input type="text" name="dificuldade_outro" placeholder="Especifique aqui..." style="border: none; border-bottom: 1px dashed #ccc; width: 60%;">
+    </label>
+
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
+
+    <p><strong>💡 7. O que mais te ajudou a crescer como MEI?</strong></p>
+    <label><input type="radio" name="ajuda_crescimento" value="Cursos e mentorias" required> Cursos e mentorias</label><br>
+    <label><input type="radio" name="ajuda_crescimento" value="Marketing digital"> Marketing digital</label><br>
+    <label><input type="radio" name="ajuda_crescimento" value="Networking com outros empreendedores"> Networking com outros empreendedores</label><br>
+    <label><input type="radio" name="ajuda_crescimento" value="Organização financeira"> Organização financeira</label><br>
+    <label><input type="radio" name="ajuda_crescimento" value="Mudança de mentalidade"> Mudança de mentalidade</label><br>
+    <label>
+        <input type="radio" name="ajuda_crescimento" value="Outro"> Outro:
+        <input type="text" name="ajuda_outro" placeholder="Especifique aqui..." style="border: none; border-bottom: 1px dashed #ccc; width: 60%;">
+    </label>
+
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
+
+    <p><strong>🎯 8. Qual é o seu maior objetivo hoje como MEI?</strong></p>
+    <label><input type="radio" name="objetivo_hoje" value="Viver exclusivamente do meu negócio" required> Viver exclusivamente do meu negócio</label><br>
+    <label><input type="radio" name="objetivo_hoje" value="Escalar e contratar equipe"> Escalar e contratar equipe</label><br>
+    <label><input type="radio" name="objetivo_hoje" value="Aumentar faturamento"> Aumentar faturamento</label><br>
+    <label><input type="radio" name="objetivo_hoje" value="Migrar para ME ou outro modelo"> Migrar para ME ou outro modelo</label><br>
+
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
+
+    <!-- Campos de Captura de Contato -->
+    <div style="background-color: #f9f9f9; padding: 20px; border-radius: 6px; margin-top: 20px; margin-bottom: 20px; border-left: 4px solid #004d40;">
+        <p style="margin-top: 0; font-weight: bold; color: #004d40; font-size: 16px;">Quase lá! Onde devemos enviar o seu diagnóstico estratégico?</p>
+
+        <div style="margin-bottom: 15px;">
+            <label style="display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px;">Seu Nome Completo:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome aqui..." required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
         </div>
 
-        <!-- Pergunta 3: A Visão de Futuro e Cultura de Crescimento -->
-        <div style="margin-bottom: 25px;">
-            <p><strong>3. Qual é a sua principal visão para o faturamento e o futuro da sua empresa nos próximos 3 anos?</strong></p>
-            <label><input type="radio" name="visao_futuro" value="Sobrevivência" required> Apenas manter as contas em dia e garantir minha renda de sobrevivência</label><br>
-            <label><input type="radio" name="visao_futuro" value="Estabilizar"> Estabilizar o negócio, organizar a casa e continuar operando no limite do MEI</label><br>
-            <label><input type="radio" name="visao_futuro" value="Escalar"> Escalar além dos 81k, estruturando a empresa para faturar múltiplos dígitos e virar ME</label><br>
-            <label><input type="radio" name="visao_futuro" value="Império"> Construir um império empresarial sólido, mirando a meta do milhão e a consolidação corporativa</label>
+        <div style="margin-bottom: 10px;">
+            <label style="display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px;">Seu WhatsApp (com DDD):</label>
+            <input type="tel" name="whatsapp" placeholder="(21) 99999-9999" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
         </div>
+    </div>
 
-        <hr style="border: 0; border-top: 1px solid #000; margin: 15px 0;">
-        
-        <p><strong>🟡 4. Qual é o seu segmento de atuação como MEI?</strong></p>
-        <label><input type="radio" name="segmento" value="Alimentação" required> Alimentação</label><br>
-        <label><input type="radio" name="segmento" value="Beleza/Estética"> Beleza/Estética</label><br>
-        <label><input type="radio" name="segmento" value="Moda"> Moda</label><br>
-        <label><input type="radio" name="segmento" value="Serviços"> Serviços</label><br>
-        <label><input type="radio" name="segmento" value="Artesanato"> Artesanato</label><br>
-        <label><input type="radio" name="segmento" value="Tecnologia"> Tecnologia</label><br>
-        <label>
-            <input type="radio" name="segmento" value="Outro"> Outro: 
-            <input type="text" name="segmento_outro" placeholder="Especifique aqui..." style="border: none; border-bottom: 1px dashed #ccc; width: 60%;">
-        </label>
-
-        <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
-
-        <p><strong>🔥 5. Quando você formalizou seu MEI?</strong></p>
-        <label><input type="radio" name="tempo_mei" value="Menos de 6 meses" required> Menos de 6 meses</label><br>
-        <label><input type="radio" name="tempo_mei" value="Entre 6 meses e 1 ano"> Entre 6 meses e 1 ano</label><br>
-        <label><input type="radio" name="tempo_mei" value="Mais de 1 ano"> Mais de 1 ano</label>
-
-        <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
-
-        <p><strong>💬 6. Qual foi sua maior dificuldade no início?</strong></p>
-        <label><input type="radio" name="dificuldade_inicio" value="Atrair clientes" required> Atrair clientes</label><br>
-        <label><input type="radio" name="dificuldade_inicio" value="Divulgar meu negócio"> Divulgar meu negócio</label><br>
-        <label><input type="radio" name="dificuldade_inicio" value="Organizar finanças"> Organizar finanças</label><br>
-        <label><input type="radio" name="dificuldade_inicio" value="Entender burocracias"> Entender burocracias</label><br>
-        <label><input type="radio" name="dificuldade_inicio" value="Acreditar que era possível crescer"> Acreditar que era possível crescer</label><br>
-        <label>
-            <input type="radio" name="dificuldade_inicio" value="Outro"> Outro:
-            <input type="text" name="dificuldade_outro" placeholder="Especifique aqui..." style="border: none; border-bottom: 1px dashed #ccc; width: 60%;">
-        </label>
-
-        <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
-
-        <p><strong>💡 7. O que mais te ajudou a crescer como MEI?</strong></p>
-        <label><input type="radio" name="ajuda_crescimento" value="Cursos e mentorias" required> Cursos e mentorias</label><br>
-        <label><input type="radio" name="ajuda_crescimento" value="Marketing digital"> Marketing digital</label><br>
-        <label><input type="radio" name="ajuda_crescimento" value="Networking com outros empreendedores"> Networking com outros empreendedores</label><br>
-        <label><input type="radio" name="ajuda_crescimento" value="Organização financeira"> Organização financeira</label><br>
-        <label><input type="radio" name="ajuda_crescimento" value="Mudança de mentalidade"> Mudança de mentalidade</label><br>
-        <label>
-            <input type="radio" name="ajuda_crescimento" value="Outro"> Outro:
-            <input type="text" name="ajuda_outro" placeholder="Especifique aqui..." style="border: none; border-bottom: 1px dashed #ccc; width: 60%;">
-        </label>
-
-        <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
-
-        <p><strong>🎯 8. Qual é o seu maior objetivo hoje como MEI?</strong></p>
-        <label><input type="radio" name="objetivo_hoje" value="Viver exclusivamente do meu negócio" required> Viver exclusivamente do meu negócio</label><br>
-        <label><input type="radio" name="objetivo_hoje" value="Escalar e contratar equipe"> Escalar e contratar equipe</label><br>
-        <label><input type="radio" name="objetivo_hoje" value="Aumentar faturamento"> Aumentar faturamento</label><br>
-        <label><input type="radio" name="objetivo_hoje" value="Migrar para ME ou outro modelo"> Migrar para ME ou outro modelo</label><br>
-        <label><input type="radio" name="objetivo_hoje" value="Ter liberdade de tempo e geográfica"> Ter liberdade de tempo e geográfica</label><br>
-        <label>
-            <input type="radio" name="objetivo_hoje" value="Outro"> Outro:
-            <input type="text" name="objetivo_outro" placeholder="Especifique aqui..." style="border: none; border-bottom: 1px dashed #ccc; width: 60%;">
-        </label>
-
-        <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
-
-        <p><strong>📱 9. Onde você costuma consumir conteúdo sobre empreendedorismo?</strong></p>
-        <label><input type="checkbox" name="consumo_conteudo" value="Instagram"> Instagram</label><br>
-        <label><input type="checkbox" name="consumo_conteudo" value="YouTube"> YouTube</label><br>
-        <label><input type="checkbox" name="consumo_conteudo" value="Podcasts"> Podcasts</label><br>
-        <label><input type="checkbox" name="consumo_conteudo" value="TikTok"> TikTok</label><br>
-        <label><input type="checkbox" name="consumo_conteudo" value="Cursos online"> Cursos online</label><br>
-        <label>
-            <input type="checkbox" name="consumo_conteudo" value="Outro"> Outro:
-            <input type="text" name="consumo_outro" placeholder="Especifique aqui..." style="border: none; border-bottom: 1px dashed #ccc; width: 60%;">
-        </label>
-
-        <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
-
-        <p><strong>🧠 10. Qual tipo de conteúdo mais te atrai?</strong></p>
-        <label><input type="checkbox" name="tipo_conteudo" value="Direto e prático"> Direto e prático</label><br>
-        <label><input type="checkbox" name="tipo_conteudo" value="Inspirador e emocional"> Inspirador e emocional</label><br>
-        <label><input type="checkbox" name="tipo_conteudo" value="Técnico e detalhado"> Técnico e detalhado</label><br>
-        <label><input type="checkbox" name="tipo_conteudo" value="Com histórias reais"> Com histórias reais</label><br>
-        <label>
-            <input type="checkbox" name="tipo_conteudo" value="Outro"> Outro:
-            <input type="text" name="tipo_outro" placeholder="Especifique aqui..." style="border: none; border-bottom: 1px dashed #ccc; width: 60%;">
-        </label>
-
-    <!-- Pergunta 11: A Virada de Chave Definitiva -->
-        <div style="margin-bottom: 25px;">
-            <p><strong>11. Você chegou até aqui... No fundo, você deseja dar baixa no seu MEI por falta de suporte ou acredita que vai migrar para ME e escalar?</strong></p>
-            <label><input type="radio" name="futuro_mei" value="Dar Baixa" required> Sinto que estou no limite, perdido e pensando até em dar baixa</label><br>
-            <label><input type="radio" name="futuro_mei" value="Estagnado"> Estou estagnado, patinando e sem saber como sair dos 81k</label><br>
-            <label><input type="radio" name="futuro_mei" value="Migrar ME"> Acredito totalmente no potencial do negócio e vou migrar para ME em breve</label><br>
-            <label><input type="radio" name="futuro_mei" value="Escalar Forte"> Já decidi: vou estruturar meu império corporativo e escalar muito além da ME</label>
-        </div>
-
-        <hr style="border: 0; border-top: 1px solid #000; margin: 15px 0;">
-
-          <!-- Pergunta 12: Raio-X do Faturamento Mensal -->
-        <div style="margin-bottom: 25px;">
-            <p><strong>12. Atualmente, qual é a faixa de faturamento mensal aproximada do seu negócio?</strong></p>
-            <label><input type="radio" name="faturamento_mensal" value="Abaixo de 3k" required> Abaixo de R$ 3.000 por mês (lutando para pagar o DAS e sobreviver)</label><br>
-            <label><input type="radio" name="faturamento_mensal" value="Entre 3k e 6.750"> Entre R$ 3.000 e R$ 6.750 (no limite do teto do MEI, com medo de passar)</label><br>
-            <label><input type="radio" name="faturamento_mensal" value="Entre 6.750 e 15k"> Entre R$ 6.750 e R$ 15.000 (faturando acima do teto, precisando urgentemente virar ME)</label><br>
-            <label><input type="radio" name="faturamento_mensal" value="Acima de 15k"> Acima de R$ 15.000 por mês (já operando porte de empresa corporativa sólida)</label>
-        </div>
-
-        <hr style="border: 0; border-top: 1px solid #000; margin: 15px 0;">
-
-<!-- Campos de Captura de Contato -->
-        <div style="background-color: #f9f9f9; padding: 20px; border-radius: 6px; margin-top: 20px; margin-bottom: 20px; border-left: 4px solid #004d40;">
-            <p style="margin-top: 0; font-weight: bold; color: #004d40; font-size: 16px;">🎯 Quase lá! Onde devemos enviar o seu diagnóstico estratégico?</p>
-            
-            <div style="margin-bottom: 15px;">
-                <label style="display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px;">Seu Nome Completo:</label>
-                <input type="text" name="nome" placeholder="Digite seu nome aqui..." required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
-            </div>
-
-            <div style="margin-bottom: 10px;">
-                <label style="display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px;">Seu WhatsApp (com DDD):</label>
-                <input type="tel" name="whatsapp" placeholder="(21) 99999-9999" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
-            </div>
-        </div>
-        
-       <button type="submit" style="background-color: #008080; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; display: block; width: 100%; font-size: 1.1em;">
-            Enviar Respostas.
-        </button>
-              
+    <button type="submit" style="background-color: #008080; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; display: block; width: 100%; font-size: 1.1em; font-weight: bold;">
+        Enviar Respostas
+    </button>
+    
     </form>
     
     <div style="background-color: #2c3e50; color: #ecf0f1; padding: 20px 0; margin-top: 30px; border-radius: 0 0 8px 8px; text-align: center;">
